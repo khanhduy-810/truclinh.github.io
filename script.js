@@ -144,7 +144,7 @@ $(document).ready(function () {
   Person.add();
   $(document).on('click', '.xn',function () {
 	  if ($('.pass').val() == 'anhyeubelinhnhieu'){
-		window.location.href = "/love.html";
+		window.location.href = "truclinh.github.io/love.html";
 	  }
 	  else{
 		  alert("Sai mật khẩu òi :3333")
