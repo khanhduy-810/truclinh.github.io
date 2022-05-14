@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(font.css);
 [class*=fontawesome-]:before {
   font-family: "FontAwesome", sans-serif;
 }
