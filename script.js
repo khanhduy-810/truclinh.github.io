@@ -9,7 +9,7 @@ var Person = {
   wrap: $("#people"),
   people: [
     { name: "", age: "Bấm vào trái tim bên dưới đi :3", img: "images/0.jpg" },
-    { name: "", age: "Hé nhô pạn Linh <a href='/love.html'>Bấm dô đây choa lẹ</a>", img: "images/1.jpg" },
+    { name: "", age: "Hé nhô pạn Linh <a href='./love.html'>Bấm dô đây choa lẹ</a>", img: "images/1.jpg" },
     {
       name: "",
       age: "Mìn làm cái trò mèo này vào ngày 14/5/2022",
