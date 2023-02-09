@@ -6,17 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="icon" type="image/png" href=".images/favicon.png" />
+    <link rel="icon" href="./images/favicon.ico" />
     <style>
         @font-face {
             font-family: myLove;
             src: url(Love\ Letters.ttf);
         }
 
+        @font-face {
+            font-family: love;
+            src: url(Love.ttf);
+        }
+
+
+
+
         body {
             color: white;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            background: url('images/7044.jpg');
+            /* background-color: #aea9d6; */
+            background-color: #9590b6;  
         }
 
         .header {
@@ -38,7 +47,7 @@
             height: 150px;
             border-radius: 50%;
             margin: 20px;
-
+            box-shadow: 0 0 5px pink, 0 0 50px #9590b6;
             object-fit: cover;
             object-position: center right;
             display: block;
@@ -46,7 +55,7 @@
         }
 
         .heart {
-            background-color: red;
+            background-color: crimson;
             width: 50px;
             height: 50px;
             position: relative;
@@ -57,7 +66,7 @@
         }
 
         .date {
-            text-shadow: 0 0 3px red, 0 0 5px #0000FF;
+            /* text-shadow: 0 0 3px red, 0 0 5px #0000FF; */
         }
 
         .heart::after,
@@ -65,7 +74,7 @@
             content: "";
             width: 50px;
             height: 50px;
-            background-color: red;
+            background-color: crimson;
             position: absolute;
             border-radius: 50%;
         }
@@ -116,20 +125,33 @@
         .pass p {
             color: whitesmoke;
         }
+
+        .fa-heart {
+            color: rgb(226, 200, 200);
+            font-size: 20px;
+            position: absolute;
+            animation: heartMove linear 1;
+            top: -10vh;
+            z-index: -1;
+        }
+
+        @keyframes heartMove {
+            0% {
+                transform: translateY(0vh);
+            }
+
+            100% {
+                transform: translateY(100vh);
+            }
+        }
     </style>
-    <title>Duy  Linh ♥</title>
+    <title>Duy ♥ Linh</title>
 </head>
 
 <body>
 
-    <div class="pass">
-        <br><br>
-        <p>Mời nhập mật khẩu</p>
-        <input class="matkhau" type="password">
-        <button class="xn">Xác nhận</button>
-    </div>
 
-    <div class="container hidden">
+    <div class="container">
         <div class="row">
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -141,8 +163,10 @@
         <div class="row">
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
-                <h3>BEEN LOVE MEMORY</h3>
-                <p>Giữa 7 tỷ người ngoài kia chúng ta lựa chọn nhau để cùng nắm tay cùng đi tiếp cuộc hành trình.</p>
+                <h3 style="font-family: love;font-size: 50px;color: white;">BEEN LOVE MEMORY</h3>
+                <p
+                    style="font-size: medium;">
+                    对于世界而言，你是一个人，但是对于我，你是我的整个世界。</p>
             </div>
         </div>
 
@@ -158,8 +182,10 @@
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="clock">
-                    <h3 class="counter">1 NGÀY</h3>
-                    <p class="time">00:00</p>
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;"
+                        class="counter">1 DAY</h3>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;"
+                        class="time">00:00</p>
                 </div>
             </div>
 
@@ -185,8 +211,12 @@
                 <br>
                 <img src="./images/duy.jpg" class="image--cover">
                 <br>
-                <p style="text-align: center">Nguyễn Văn Khánh Duy</p>
-                <p style="text-align: center">08-10-2002</p>
+                <p
+                    style="text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 20px;">
+                    KHÁNH DUY</p>
+                <p
+                    style="text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    08-10</p>
                 <br>
             </div>
 
@@ -194,9 +224,8 @@
                 <br><br>
                 <div class="heart">
                 </div>
-                <br>
-                <h1 style="text-align: center;" class="date"></h1>
-                <br><br>
+                <h1 style="text-align: center;font-family: myLove" class="date"></h1>
+                <div class="type" style="text-align: center;"></div>
 
             </div>
 
@@ -204,8 +233,12 @@
                 <br>
                 <img src="./images/linh.jpg" class="image--cover">
                 <br>
-                <p style="text-align: center">Nguyễn Trúc Linh</p>
-                <p style="text-align: center">10-05-2005</p>
+                <p
+                    style="text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 20px;">
+                    TRÚC LINH</p>
+                <p
+                    style="text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    10-05</p>
                 <br>
             </div>
         </div>
@@ -234,19 +267,13 @@
 
         </div>
 
-        <div class="row">
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <br>
-            </div>
-
-        </div>
-
 
         <div class="row">
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <p style="text-align: center;">From Duy with love <span style="color: red;">♥</span></p>
+                <p
+                    style="text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    From Duy with love <span style="color: red;">♥</span></p>
             </div>
 
         </div>
@@ -254,9 +281,13 @@
 
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/love.js"></script>
+    <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

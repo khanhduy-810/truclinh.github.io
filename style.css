@@ -15,7 +15,7 @@ a {
 }
 
 body {
-  background:url('images/7044.jpg')
+  background-color: #9590b6;  
   
 }
 
@@ -313,4 +313,22 @@ body {
 }
 #copy a {
   color: #aaa;
+}
+.fa-heart {
+  color: rgb(226, 200, 200);
+  font-size: 20px;
+  position: absolute;
+  animation: heartMove linear 1;
+  top: -10vh;
+  z-index: -1;
+}
+
+@keyframes heartMove {
+  0% {
+      transform: translateY(0vh);
+  }
+
+  100% {
+      transform: translateY(100vh);
+  }
 }
